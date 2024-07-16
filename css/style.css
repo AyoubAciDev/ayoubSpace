@@ -1,0 +1,108 @@
+/* global styling */
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* global variables contains the main colors and values reusebale */
+ :root {
+  /* colors */
+  --brand1 : #12F7D6 ;
+  --brand2 : #98FAEC ;
+  --bg1 : #292F36 ;
+  --bg2 : #1A1E23 ;
+  --grey : #43454D ;
+  --white : #FFFFFF ;
+  --html : #E54F26 ;
+  --css : #0C73B8 ;
+  --js : #E7A020 ;
+
+  /* fonts */
+  --main-font : ubuntu;
+ }
+
+ body {
+  background-color:  var(--bg1);
+ }
+
+ /* start header styling */
+ header {
+  display: flex;
+  justify-content: space-between;
+  height: 85px;
+  background-color: var(--bg1);
+  width: 90%;
+  margin-left: 5%;
+  border-bottom: 1.5px solid var(--grey);
+ }
+
+ /* header left styling */
+ header .header-left {
+  display: flex;
+  width: 33%;
+  justify-content: start;
+  align-items: center;
+  color: var(--white);
+  font-family: var(--main-font);
+  font-size: 25px;
+ }
+
+ /*logo*/
+ .logo {
+  color: var(--brand1);
+  margin-right: 10px;
+  font-size: 27px;
+ }
+
+ /*header middle part */
+ header .header-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+ }
+
+ header .header-center a {
+  color: var(--white);
+  font-family: var(--main-font);
+  font-size: 23px;
+  margin-left: 40px;
+  text-decoration: none;
+ }
+
+ /* header right part*/
+
+ header .header-right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 33%;
+ }
+
+ header .header-right .contact-links {
+  display: flex;
+  width: 33%;
+  justify-content: center;
+  align-items: center;
+ }
+
+ header .header-right .contact-links i {
+  color: var(--brand1);
+  font-size: 25px;
+  margin-right: 10px;
+ }
+
+ header .header-right .contact-links{ 
+  text-decoration: none;
+  font-family: var(--main-font);
+  color: var(--white);
+  font-size: 23px;
+  justify-content: end;
+ }
+
+ /* hover effect on the header */
+ header .hover:hover {
+  color: var(--brand1);
+ }
+ /* end header styling */
