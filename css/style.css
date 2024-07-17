@@ -105,4 +105,32 @@
  header .hover:hover {
   color: var(--brand1);
  }
+
+ /* start heading styling for the laptop screen size */
+ @media (max-width: 1440px) {
+
+  header {
+    height: 60px;
+  }
+  header .header-left,.logo {
+    font-size: 20px;
+  }
+
+  header .header-center a {
+    font-size: 15px;
+  }
+
+  header .header-right .contact-links {
+    font-size: 15px;
+  }
+ }
+
+ /* media query max width 1024 px*/
+ @media (max-width : 1024px){
+  header {
+    font-size: 13px;
+  }
+ }
+ 
+ /* end heading styling for the laptop screen size */
  /* end header styling */
