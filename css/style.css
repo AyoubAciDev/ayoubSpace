@@ -35,6 +35,7 @@
   width: 90%;
   margin-left: 5%;
   border-bottom: 1.5px solid var(--grey);
+  align-items: center;
  }
 
  /* header left styling */
@@ -58,7 +59,7 @@
  /*header middle part */
  header .header-center {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   width: 33%;
  }
@@ -71,35 +72,6 @@
   text-decoration: none;
  }
 
- /* header right part*/
-
- header .header-right {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  width: 33%;
- }
-
- header .header-right .contact-links {
-  display: flex;
-  width: 33%;
-  justify-content: center;
-  align-items: center;
- }
-
- header .header-right .contact-links i {
-  color: var(--brand1);
-  font-size: 25px;
-  margin-right: 10px;
- }
-
- header .header-right .contact-links{ 
-  text-decoration: none;
-  font-family: var(--main-font);
-  color: var(--white);
-  font-size: 23px;
-  justify-content: end;
- }
 
  /* hover effect on the header */
  header .hover:hover {
@@ -119,10 +91,6 @@
   header .header-center a {
     font-size: 15px;
   }
-
-  header .header-right .contact-links {
-    font-size: 15px;
-  }
  }
 
  /* media query max width 1024 px*/
@@ -131,6 +99,46 @@
     font-size: 13px;
   }
  }
- 
+
  /* end heading styling for the laptop screen size */
+ /* navbar trigger */
+ header .navbar-trigger {
+   display: flex;
+   flex-direction: column;
+   width: 50px;
+   height: 50px;
+   justify-content: center;
+   align-items: center;
+  }
+  /* screen size 425px*/
+  @media (max-width: 425px){
+    header .header-center {
+      display: none;
+    }
+  }
+
+  @media (min-width: 425px){
+    header .navbar-trigger {
+      display: none;
+    }
+   }
+  
+ header .navbar-trigger span {
+  width: 30px;
+  height: 2px;
+  background-color: white; 
+  margin-bottom: 5px;
+  transition: 100ms;
+}
+
+header .navbar-trigger .rotate{
+  margin-bottom: -2px;
+}
+header .navbar-trigger .span1 {
+  transform: rotate(45deg);
+}
+header .navbar-trigger .span2 {
+  transform: rotate(-45deg);
+}
+
  /* end header styling */

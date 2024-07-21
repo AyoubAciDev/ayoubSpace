@@ -1,22 +1,12 @@
-/* script to handel header vevnts */
-/* this code to redesign the header when the media query matches*/
-/* so using the window object we can konw the current screen size and using it's builtin function matchMedia we can compare the current screen size with the media screen size if so then I want u to update the innerhtml content of i tag to suit the design requerments*/
-function updateHeaderContent(){ 
-  let i = 0;
-  let iconClasses = ["fa-linkedin", "fa-discord", "fa-github"];
-  while (i < 3){
-    let updatedElement = document.getElementsByClassName("contact-links")[i];
-    /* checking if the current screen size matches the media query screen size specified in the condition*/
-    if (window.matchMedia("(max-width: 1024px)").matches) {
-      updatedElement.innerHTML = `<i class="fa-brands ${iconClasses[i]} "></i>`;
-      console.log(i);
-    } else {
-      updatedElement.innerHTML = `<i class="fa-brands ${iconClasses[i]} "></i> ${iconClasses[i]} `;
-    }
+/* I will add an event listener where if the navbar-trigger is clicked */
+/* we will add new html elements*/
+let clickableElement = document.querySelector(".navbar-trigger");
+function isClicked(){
+  /* let's get the element that will be clickable*/
+  /* check if the div is clicked*/
+  clickableElement.innerHTML = `<span class = "rotate span1"></span> <span class = "rotate span2"></span>`;
 
-  }
 }
-/* inload check */
-updateHeaderContent();
-/*adding an event litener in case the media query matches the window screen size*/
-window.addEventListener("resize", updateHeaderContent);
+
+/* adding an event listener*/
+clickableElement.addEventListener("click", isClicked);
