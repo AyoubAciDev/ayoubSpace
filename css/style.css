@@ -181,7 +181,7 @@ header .navbar-trigger .span2 {
     font-family: var(--main-font);
     color: var(--brand1);
     align-self: center;
-    font-size: 30px;
+    font-size: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -263,5 +263,38 @@ header .navbar-trigger .span2 {
     display: flex;
     width: 75%;
   }
+/* welcome section media queries*/
+@media (max-width: 1724px ){
+  .info-card{
+    width: 20%;
+  }
+}
+
+@media (max-width: 1300px ){
+  .info-card{
+    width: 25%;
+  }
+}
+
+@media (max-width: 1024px ){
+  .welcome-section{
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-card {
+    width: 40%;
+  }
+}
+
+@media (max-width: 630px ){
+  .info-card{
+    width: 60%;
+  }
+}
+@media (max-width: 425px ){
+  .info-card{
+    width: 80%;
+  }
+}
 
   /* end styling the welcome section*/
