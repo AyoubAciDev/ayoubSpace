@@ -24,13 +24,15 @@
 
  body {
   background-color:  var(--bg1);
+  display: flex;
+  flex-direction: column;
  }
 
  /* start header styling */
  header {
   display: flex;
   justify-content: space-between;
-  height: 85px;
+  height: 65px;
   background-color: var(--bg1);
   width: 90%;
   margin-left: 5%;
@@ -46,14 +48,14 @@
   align-items: center;
   color: var(--white);
   font-family: var(--main-font);
-  font-size: 25px;
+  font-size: 23px;
  }
 
  /*logo*/
  .logo {
   color: var(--brand1);
   margin-right: 10px;
-  font-size: 27px;
+  font-size: 25px;
  }
 
  /*header middle part */
@@ -67,7 +69,7 @@
  header .header-center a {
   color: var(--white);
   font-family: var(--main-font);
-  font-size: 23px;
+  font-size: 20px;
   margin-left: 40px;
   text-decoration: none;
  }
@@ -108,10 +110,10 @@
    width: 50px;
    height: 50px;
    justify-content: center;
-   align-items: center;
+   align-items: end;
   }
   /* screen size 425px*/
-  @media (max-width: 425px){
+  @media (max-width: 424px){
     header .header-center {
       display: none;
     }
@@ -142,3 +144,124 @@ header .navbar-trigger .span2 {
 }
 
  /* end header styling */
+
+ /* styling drop menu for mobile screens*/
+ .drop-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey);
+  width :90% ;
+  margin-left: 5%;
+ }
+
+ .drop-menu .menu-item {
+   padding: 20px 0px 20px 0px;
+   color: var(--white);
+   font-family: var(--main-font);
+   font-size: 17px;
+   text-decoration: none;
+   width: 100%;
+   text-align: center;
+  }
+  .drop-menu > .menu-item {
+    border-bottom: 1px solid var(--brand1);
+  }
+
+  /* start styling profile section*/
+  .welcome-section {
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    /*border: 1px solid red;*/
+  }
+  
+  h1 {
+    font-family: var(--main-font);
+    color: var(--brand1);
+    align-self: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /*in
+  fo card styling*/
+  .info-card {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font);
+    color: var(--white);
+    font-size: 14px;
+    border: 1px solid var(--white);
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+     }
+
+  .info-card img {
+    width: 90px;
+    border: 1px solid var(--grey);
+    border-radius: 50%;
+    margin: 15px 0px 15px 0px;
+  }
+  .welcome-section .info-card .name {
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+
+  .info-card .work-title {
+    padding-bottom: 15px;
+  }
+  .welcome-section .info-card .info-container {
+    display: flex;
+    width: 80%;
+    justify-content: start;
+  }
+
+  .welcome-section .info-card .info-container i {
+    color: var(--brand2);
+    padding-right: 12px;
+    padding-bottom: 10px;
+  }
+  
+  .cv-btn {
+    width: 65%;
+    background-color: var(--white);
+    color: var(--grey);
+    text-decoration: none;
+    font-family: var(--main-font);
+    margin-bottom: 50px;
+    margin-top: 30px;
+    font-size: 18px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    border-radius: 20px;
+
+  }
+  
+  .cv-btn:hover {
+    background-color: var(--brand1);
+    color: var(--bg1);
+  }
+  .cv-btn i {
+    margin-left: 5px;
+  }
+  .grey-text {
+    color: grey;
+    font-family: monospace;
+  }
+
+  /* end styling welcome section*/
+  /* start styling the welcome section*/
+  .welcoming-section {
+    display: flex;
+    width: 75%;
+  }
+
+  /* end styling the welcome section*/
