@@ -100,6 +100,9 @@
   header {
     font-size: 13px;
   }
+  .developer {
+    font-size: 40px;
+  }
  }
 
  /* end heading styling for the laptop screen size */
@@ -174,7 +177,9 @@ header .navbar-trigger .span2 {
     display: flex;
     width: 90%;
     margin-left: 5%;
-    /*border: 1px solid red;*/
+    margin-right: 5%;
+    justify-content: center;
+    align-items: center;
   }
   
   h1 {
@@ -185,12 +190,13 @@ header .navbar-trigger .span2 {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  /*in
-  fo card styling*/
-  .info-card {
+
+/*info card styling*/
+
+.info-card {
     display: flex;
     flex-direction: column;
-    width: 15%;
+    width: 270px;
     justify-content: center;
     align-items: center;
     font-family: var(--main-font);
@@ -199,6 +205,7 @@ header .navbar-trigger .span2 {
     border: 1px solid var(--white);
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
+    margin-right: 50px;
      }
 
   .info-card img {
@@ -257,44 +264,118 @@ header .navbar-trigger .span2 {
     font-family: monospace;
   }
 
-  /* end styling welcome section*/
-  /* start styling the welcome section*/
-  .welcoming-section {
-    display: flex;
-    width: 75%;
-  }
+/* end styling welcome section*/
+/* start styling the welcome section*/
+
+
+/*styling hey section*/
+
+/*style hey header*/
+
+.hey {
+  width: 50%;
+  margin-right: 20px;
+  margin-top: 25px;
+}
+.hey h1 {
+  color: var(--white);
+}
+
+.hey .html-tag {
+  color: var(--brand2);
+  font-size: 18px;
+}
+
+.hey .name {
+  color: var(--brand1);
+}
+
+.hey .hey-caption {
+  color: grey;
+  font-size: 20px;
+  font-family: monospace;
+}
+.let-talk {
+  display: flex;
+  align-items: center;
+  color: var(--brand1);
+  font-family: var(--main-font);
+  font-size: 20px;
+  font-weight: lighter;
+  margin-bottom: 50px;
+}
+
+.let-talk  a{
+  text-decoration: none;
+  color: var(--brand1);
+  font-size: 25px;
+  cursor: pointer;
+  background-color: var(--bg2);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  border-radius: 50%;
+}
+
+/*style tech stack section*/
+
+.tech-stack {
+  width: 250px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: var(--bg2);
+  color: var(--white);
+  font-family: monospace;
+  font-size: 18px;
+  padding: 25px 0px 25px 0px;
+}
+
+.tech-stack .row {
+  display: flex;
+  margin: 25px 0px 25px 0px ;
+  align-items: center;
+}
+.tech-stack span {
+  color: var(--brand1);
+  margin-right: 13px;
+  font-size: 40px;
+}
+
 /* welcome section media queries*/
-@media (max-width: 1724px ){
-  .info-card{
-    width: 20%;
-  }
-}
-
-@media (max-width: 1300px ){
-  .info-card{
-    width: 25%;
-  }
-}
-
-@media (max-width: 1024px ){
+@media (max-width: 1050px ){
   .welcome-section{
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .info-card {
-    width: 40%;
+    margin-right: 0px;
+  }
+
+  .tech-stack {
+    margin-top: 50px;
+  }
+  
+  .hey {
+    margin-right: 0px;
+  }
+
+  .hey h1{
+    font-size: 25px;
   }
 }
 
-@media (max-width: 630px ){
-  .info-card{
-    width: 60%;
-  }
-}
-@media (max-width: 425px ){
-  .info-card{
+@media (max-width: 1000px ){
+   .hey {
     width: 80%;
-  }
+   }
 }
-
   /* end styling the welcome section*/
