@@ -78,6 +78,7 @@
  /* hover effect on the header */
  header .hover:hover {
   color: var(--brand1);
+  box-shadow: 0px 5px 8px -5px var(--brand1);
  }
 
  /* start heading styling for the laptop screen size */
@@ -206,6 +207,7 @@ header .navbar-trigger .span2 {
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
     margin-right: 50px;
+    box-shadow: 7px 7px 15px 5px var(--brand1);
      }
 
   .info-card img {
@@ -329,12 +331,13 @@ header .navbar-trigger .span2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 100px;
+  border-radius: 80px;
   background-color: var(--bg2);
   color: var(--white);
   font-family: monospace;
   font-size: 18px;
   padding: 25px 0px 25px 0px;
+  border: 1.5px solid ;
 }
 
 .tech-stack .row {
