@@ -1,0 +1,266 @@
+/* global styling */
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* global variables contains the main colors and values reusebale */
+ :root {
+  /* colors */
+  --brand1 : #12F7D6 ;
+  --brand2 : #98FAEC ;
+  --bg1 : #292F36 ;
+  --bg2 : #1A1E23 ;
+  --grey : #43454D ;
+  --white : #FFFFFF ;
+  --html : #E54F26 ;
+  --css : #0C73B8 ;
+  --js : #E7A020 ;
+
+  /* fonts */
+  --main-font : ubuntu;
+ }
+
+/* start skills section */ 
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin-left: 5%;
+
+}
+/* end skills section */ 
+ /* mouse effect */
+ .skills .mouse-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  color: var(--brand1);
+  margin-bottom: 150px;
+ }
+
+ .skills .mouse-container span {
+  width: 1.5px;
+  height: 3px;
+  background-color: var(--white);
+  margin-top: 4px;
+}
+
+.skills .mouse-container .circle {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.skills .mouse-container i {
+  font-size: 1.5rem;
+}
+
+.skills h2{
+  font-size: 3rem;
+  font-family: var(--main-font);
+  color: var(--brand1);
+}
+
+/* divider styling */
+.skills .divider {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.skills .divider span {
+  background-color: var(--brand1);
+}
+
+.skills .divider .point {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.skills .divider .line {
+  width: 120px;
+  height: 2px;
+}
+
+.skills .p {
+  color: rgb(179, 179, 179);
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  font-family: monospace;
+  margin-bottom: 60px;
+}
+
+.dev-type {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+
+}
+
+
+.dev-type .dev {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--brand2);
+  border-left:7px solid rgb(0, 195, 255) ;
+  width: 320px;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--main-font);
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.dev-type .dev p {
+  margin: 10px 0px 7px 0px;
+  font-weight: bolder;
+}
+
+.dev-type .dev span {
+  letter-spacing: 0.3px;
+  margin-bottom: 10px;
+  font-family: monospace;
+}
+
+.dev-type .dev i {
+  margin-top: 10px;
+  font-size: 1.8rem;
+}
+
+/* media queries for the dev divs */
+@media (max-width: 2100px){
+  .dev-type {
+    width: 60%;
+  }
+}
+@media (max-width: 1500px){
+  .dev-type {
+    width: 60%;
+  }
+
+}
+
+@media (max-width: 1300px){
+  .dev-type {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1024px){
+  .dev-type {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dev-type .dev {
+    margin-top: 30px;
+  }
+}
+
+
+/* start styling the sliding skills*/
+.skills .sliding-skills {
+  height: 70px;
+  width: 60%;
+  background-color: var(--bg1);
+  position: relative;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  z-index: 1;
+  margin-bottom: 150px;
+}
+
+.shodow-left {
+  width: 200px;
+  height: 200px;
+  background-color: var(--bg1);
+  box-shadow: 30px 0px 20px 20px var(--bg1);
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  z-index: 2;
+}
+.shodow-right {
+  width: 200px;
+  height: 200px;
+  background-color: var(--bg1);
+  box-shadow: -30px 0px 20px 20px var(--bg1);
+  position: absolute;
+  top: -50px;
+  right: -100px;
+  z-index: 2;
+}
+.skills .sliding-skills img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 0px;
+  left: -70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* here we are making a delay for each img to come out from outside in a different time*/
+.sliding-skills .skill1{
+  animation: left-to-right 20s linear infinite;
+  background-color: var(--bg1);
+}
+.sliding-skills .skill2{
+  animation: left-to-right 20s linear infinite;
+  animation-delay: 5s;
+  background-color: var(--bg1);
+}
+.sliding-skills .skill3{
+  animation: left-to-right 20s linear infinite;
+  animation-delay: 10s;
+  background-color: var(--bg1);
+}
+.sliding-skills .skill4{
+  animation: left-to-right 20s linear infinite;
+  animation-delay: 15s;
+  background-color: var(--bg1);
+}
+
+@keyframes left-to-right {
+  0% {
+    left: -70px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@media (max-width:1500px){
+  .skills .sliding-skills{
+    width: 70%;
+  }
+
+}
+@media (max-width:1024px){
+  .skills .sliding-skills{
+    width: 80%;
+  }
+
+}
+@media (max-width:800px){
+  .skills .sliding-skills{
+    width: 100%;
+    margin-top: 50px;
+  }
+  .skills .sliding-skills img {
+    width: 30px;
+    height: 30px;
+  }
+
+  
+
+}
+/* end styling the sliding skills*/
