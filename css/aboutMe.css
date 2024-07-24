@@ -110,7 +110,11 @@
   .about-me-div p {
     line-height: 1.5rem;
   }
-
+  
+  .about-me-div h3 {
+    color: var(--brand1);
+    font-size: 1.5rem;
+  }
   .about-me-div .green-words {
     color: var(--brand1);
     font-weight: bolder;
