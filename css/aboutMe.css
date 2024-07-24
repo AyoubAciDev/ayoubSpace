@@ -1,0 +1,152 @@
+/* global styling */
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* global variables contains the main colors and values reusebale */
+ :root {
+  /* colors */
+  --brand1 : #12F7D6 ;
+  --brand2 : #98FAEC ;
+  --bg1 : #292F36 ;
+  --bg2 : #1A1E23 ;
+  --grey : #43454D ;
+  --white : #FFFFFF ;
+  --html : #E54F26 ;
+  --css : #0C73B8 ;
+  --js : #E7A020 ;
+
+  /* fonts */
+  --main-font : ubuntu;
+ }
+
+ /* start about me section styling*/
+ .about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  background-image: url("../assets/imgs/black-370118_1280.png");
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 80px;
+ }
+
+ /* styling the mouse effect */
+.about-me .mouse-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  color: var(--brand1);
+  margin-bottom: 150px;
+}
+
+.about-me .mouse-container i {
+  font-size: 1.5rem;
+}
+.about-me .mouse-container span {
+  width: 1.5px;
+  height: 3px;
+  background-color: var(--white);
+  margin-top: 4px;
+}
+
+.about-me .mouse-container .circle {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+ /* styling the mouse effect */
+ 
+ /* main about me section */
+ .about-me-main {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+ }
+ /* about left about me */
+ .about-me-left-container {
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   margin-right: 50px;
+  }
+  
+  .about-me-title {
+    color: var(--brand1);
+    font-size: 32px;
+    font-family: var(--main-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--brand1);
+    padding: 10px 20px 10px 20px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 210px;
+    background-color: var(--bg1);
+  }
+  
+  .about-me-div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 10px;
+    background-color: var(--bg1);
+    color: white;
+    padding: 15px 0px 15px 10px;
+    font-family: monospace;
+    color: grey;
+    border-radius: 10px;
+    margin-top: 35px;
+    font-size: 1.1rem;
+  }
+
+  .about-me-div p {
+    line-height: 1.5rem;
+  }
+
+  .about-me-div .green-words {
+    color: var(--brand1);
+    font-weight: bolder;
+  }
+
+  /* about right img about me */
+  .about-me-right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-size: cover;
+  }
+.about-me-right-container img {
+  width: 60%;
+  border-radius: 15px;
+}
+
+/* start about me media queries */
+@media (max-width: 1300px){
+  .about-me-main {
+    flex-direction: column;
+  }
+
+  .about-me-main .about-me-left-container {
+    width: 80%;
+    margin-right: 0px;
+  }
+
+  .about-me-main .about-me-right-container {
+    margin-top: 50px;
+    width: 80%;
+  }
+  .about-me-main .about-me-right-container img{
+    width: 70%;
+  }
+}
+/* end about me media queries */
+ /* end about me section styling*/

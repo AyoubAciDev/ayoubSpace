@@ -202,7 +202,7 @@ header .navbar-trigger .span2 {
     font-family: var(--main-font);
     color: var(--white);
     font-size: 14px;
-    border: 1px solid var(--white);
+    border: 2px solid var(--white);
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
     margin-right: 50px;
@@ -285,17 +285,20 @@ header .navbar-trigger .span2 {
 .hey .html-tag {
   color: var(--brand2);
   font-size: 18px;
+  font-weight: bold;
 }
 
 .hey .name {
   color: var(--brand1);
 }
 
-.hey .hey-caption {
+.hey .hey-div {
   color: grey;
   font-size: 20px;
   font-family: monospace;
+  margin: 8px 0px 8px 0px;
 }
+
 .let-talk {
   display: flex;
   align-items: center;
@@ -321,6 +324,9 @@ header .navbar-trigger .span2 {
   border-radius: 50%;
 }
 
+.top {
+  margin: 8px 0px 8px 0px;
+}
 /*style tech stack section*/
 
 .tech-stack {
@@ -336,7 +342,7 @@ header .navbar-trigger .span2 {
   font-family: monospace;
   font-size: 18px;
   padding: 25px 0px 25px 0px;
-  border: 1.5px solid var(--brand2);
+  border: 2px solid var(--brand2);
 }
 
 .tech-stack .row {
