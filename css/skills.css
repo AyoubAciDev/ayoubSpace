@@ -254,13 +254,35 @@
   .skills .sliding-skills{
     width: 100%;
     margin-top: 50px;
+    height: 50px;
   }
   .skills .sliding-skills img {
     width: 30px;
     height: 30px;
   }
 
-  
+  .skills .sliding-skills .shodow-left {
+    width: 100px;
+    height: 100px;
+    background-color: var(--bg1);
+    box-shadow: 15px 0px 15px 15px var(--bg1);
+    position: absolute;
+    top: -25px;
+    left: -50px;
+    z-index: 2;
+  }
+  .skills .sliding-skills .shodow-right {
+    width: 100px;
+    height: 100px;
+    background-color: var(--bg1);
+    box-shadow: -15px 0px 15px 15px var(--bg1);
+    position: absolute;
+    top: -25px;
+    right: -50px;
+    z-index: 2;
+  }
+
+
 
 }
 /* end styling the sliding skills*/

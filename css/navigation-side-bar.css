@@ -42,6 +42,7 @@ html {
   left: 3%;
   border: 1px solid var(--white);
   border-radius: 25px;
+  z-index: 99;
 }
 
 .nav-side-bar a {
