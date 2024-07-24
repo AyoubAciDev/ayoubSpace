@@ -78,7 +78,6 @@
  /* hover effect on the header */
  header .hover:hover {
   color: var(--brand1);
-  box-shadow: 0px 5px 8px -5px var(--brand1);
  }
 
  /* start heading styling for the laptop screen size */
@@ -337,7 +336,7 @@ header .navbar-trigger .span2 {
   font-family: monospace;
   font-size: 18px;
   padding: 25px 0px 25px 0px;
-  border: 1.5px solid ;
+  border: 1.5px solid var(--brand2);
 }
 
 .tech-stack .row {
