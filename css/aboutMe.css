@@ -138,19 +138,23 @@
   .about-me-main {
     flex-direction: column;
   }
-
+  
   .about-me-main .about-me-left-container {
     width: 80%;
     margin-right: 0px;
   }
-
+  
   .about-me-main .about-me-right-container {
     margin-top: 50px;
     width: 80%;
   }
   .about-me-main .about-me-right-container img{
-    width: 70%;
+    width: 40%;
   }
 }
+@media (max-width: 1300px) {
+  
+}
+
 /* end about me media queries */
  /* end about me section styling*/
