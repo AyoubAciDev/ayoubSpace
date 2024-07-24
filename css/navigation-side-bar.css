@@ -29,6 +29,10 @@
  }
 
  /* start styling nav side bar */
+html {
+  scroll-behavior: smooth;
+}
+
  .welcome-section .nav-side-bar {
   display: flex;
   flex-direction: column;
