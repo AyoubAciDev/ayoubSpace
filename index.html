@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/aboutMe.css">
   <link rel="stylesheet" href="./css/navigation-side-bar.css">
   <link rel="stylesheet" href="./css/skills.css">
+  <link rel="stylesheet" href="./css/blogs.css">
   <!--css src files-->
   <!-- fonts external links -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +27,7 @@
     </div>
     <div class="header-center">
       <a class="hover" href="index.html">Home</a>
-      <a class="hover" href="index.html">Blogs</a>
+      <a class="hover" href="blogs.html">Blogs</a>
     </div>
     <div class="navbar-trigger">
       <span></span>
@@ -38,14 +39,14 @@
   <!-- header section-->
   <!-- welcome section-->
 <h1 class="developer">Developer!</h1>
-<div class="welcome-section">
+<div class="welcome-section" id="welcome-section">
   <!-- building the navigation side bar with scroll effect-->
   <div class="nav-side-bar">
-    <a href="index.html" title="Home"><i class="fa-solid fa-house house"></i></a>
+    <a href="#welcome-section" title="Home"><i class="fa-solid fa-house house"></i></a>
     <a href="#about-me" title="About me"><i class="fa-solid fa-user"></i></a>
     <a href="#skills"><i class="fa-solid fa-code"></i></a>
+    <a href="#blogs"><i class="fa-solid fa-pen-to-square"></i></a>
     <a href="#"><i class="fa-solid fa-layer-group"></i></a>
-    <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
     <a href="#"><i class="fa-solid fa-envelope"></i></a>
   </div>
     <div class="info-card">
@@ -128,7 +129,7 @@
         </div>
       </div>
       <div class="about-me-right-container">
-        <img src="./assets/imgs/my-setup.jpg" alt="">
+        <img src="./assets/imgs/Operating system-rafiki.svg" alt="">
       </div>
 
     </div>
@@ -174,7 +175,58 @@
           <img class="skill4" src="./assets/icons/React_(web_framework)-Logo.wine.svg" alt="">
         </div>
       </section>
-    <!-- end skills section -->
+<!-- end skills section -->
+<!-- blogs section -->
+ <section class="blogs" id="blogs">
+  <div class="blogs-container">
+    <div class="mouse-container">
+            <i class="fa-solid fa-computer-mouse"></i>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="circle"></span>
+    </div>
+    <h2>Blogs</h2>
+    <div class="divider">
+      <span class="point"></span>
+      <span class="line"></span>
+      <span class="point"></span>
+    </div>
+    <p class="p">My thoughts in technlogy and business, My learning journey journal as a <br> self thought programmer</p>
+    <span class="lin"></span>
+    <div class="blog">
+      <div class="blog-img">
+        <img src="./assets/imgs/blogs-imgs/How-to-Learn-Web-Development.png" alt="blog image">
+      </div>
+      <div class="blog-caption">
+        <h3>How to start to learn programming as a self thought!</h3>
+        <p class="grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda enim sint tempora, dicta sunt quam ullam vero possimus corporis, perferendis, commodi rerum modi animi neque.</p>
+        <a href="blog1.html">Read more >></a>
+        <div class="details">
+          <div class="category">Web Developer</div>  
+          <div class="wrapper">
+            <div class="an-info">
+              <span>Author: </span>
+              <p class="grey">Ayoub</p>
+            </div>
+            <div class="an-info">
+              <span>Date: </span>
+              <p class="grey">25.july 2024</p>
+            </div>
+            <div class="an-info">
+              <span>Read: </span>
+              <p class="grey">5 Min</p>
+            </div>
+          </div>        
+        </div>
+      </div>
+    </div>
+    <span class="lin"></span>
+  </div>
+ </section>
+<!-- blogs section -->
   <script src="main.js"></script>
 </body>
 </html>

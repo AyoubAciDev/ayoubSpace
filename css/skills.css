@@ -210,22 +210,22 @@
 
 /* here we are making a delay for each img to come out from outside in a different time*/
 .sliding-skills .skill1{
-  animation: left-to-right 20s linear infinite;
+  animation: left-to-right 10s linear infinite;
   background-color: var(--bg1);
 }
 .sliding-skills .skill2{
-  animation: left-to-right 20s linear infinite;
-  animation-delay: 5s;
+  animation: left-to-right 10s linear infinite;
+  animation-delay: 2s;
   background-color: var(--bg1);
 }
 .sliding-skills .skill3{
-  animation: left-to-right 20s linear infinite;
-  animation-delay: 10s;
+  animation: left-to-right 10s linear infinite;
+  animation-delay: 4s;
   background-color: var(--bg1);
 }
 .sliding-skills .skill4{
-  animation: left-to-right 20s linear infinite;
-  animation-delay: 15s;
+  animation: left-to-right 10s linear infinite;
+  animation-delay: 6s;
   background-color: var(--bg1);
 }
 
