@@ -282,3 +282,39 @@
 /* end blog container */
 /* creating a divider */
 /* end styling blogs section */
+
+ /* let's create an entry animation*/
+ @keyframes appear {
+  0%{
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+
+ }
+
+ @keyframes appear {
+  0%{
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+
+ }
+
+ .blog {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+ }
+ .blogs-container h2,.divider,p,.sliding-skills,span {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+ }

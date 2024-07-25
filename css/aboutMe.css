@@ -163,3 +163,27 @@
 
 /* end about me media queries */
  /* end about me section styling*/
+
+ /* let's create an entry animation*/
+ @keyframes appear {
+  0%{
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+
+ }
+
+ .about-me-left-container {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+ }
+ .about-me-right-container {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+ }
